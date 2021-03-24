@@ -104,8 +104,7 @@ ul.topnav li.left {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle,
-.button-text {
+.body-subtitle {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -121,8 +120,7 @@ ul.topnav li.left {
   fill: white;
 }
 
-.usage-component,
-.floating-btn-components {
+.usage-component {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -132,136 +130,95 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 
-.buttons-div1,
-.buttons-div2,
-.buttons-div3 {
+.input-component {
   border: 3px solid #4caf50;
   padding: 20px;
-  width: 50%;
+  width: 40%;
+  height: 160px;
   margin-left: 400px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.btn-primary,
-.btn-primary-notification {
-  background-color: #393e46;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-secondary {
-  background-color: #333;
-  border: 2px solid #4caf50;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-link {
-  padding: 10px;
-  color: lightblue;
-  font-size: 20px;
-}
-.btn-icon1 {
-  background-color: black;
-  color: white;
-  padding: 4px;
-  height: 55px;
-  width: 20%;
-  border-radius: 8px;
-  background-color: #393e46;
-}
-.settings-icon {
-  /* margin-top: 10px; */
-  margin-right: 10px;
-}
-span {
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: 550;
 }
 
-.buttonload {
-  background-color: #393e46;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-}
-.fa {
-  margin-left: -12px;
-  margin-right: 8px;
-}
-.btn-notification {
-  background-color: red;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  border: 0.2px solid white;
-  position: relative;
-  bottom: 4px;
-  right: 45px;
-}
-.img-button {
+.img-input {
   width: 60%;
   margin-left: 400px;
   position: relative;
   top: 20px;
-  right: 40px;
-  overflow: hidden;
-  overflow: none;
-}
-.Icon-btn-round {
-  background-color: #393e46;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-}
-.home-icon {
-  color: white;
-  height: 2em;
-  margin-top: 5px;
+  right: 80px;
 }
 
-.plus-icon {
-  color: white;
-  height: 2em;
-  font-weight: 550px;
-  font-size: 40px;
-  margin-top: 5px;
+.input-group {
+  color: #333;
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 20px 10px;
+  width: 200px;
 }
 
-.edit-icon {
+label {
+  display: block;
+  margin-bottom: 2px;
   color: white;
-  margin-top: 5px;
-  height: 2.5em;
-}
-.heart-icon {
-  color: white;
-  margin-top: 5px;
-  height: 1.8em;
 }
 
-.prev-btn,
-.next-btn {
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-  margin-top: 10px;
-  border-radius: 100%;
-  background-color: #393e46;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
+input[type="text"] {
+  background: #393e46;
+  border: 1px solid #999;
+  float: left;
+  font-size: 13px;
+  height: 33px;
+  margin: 0;
+  padding: 0 0 0 15px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: #fd7014;
   display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
+.input-group .error-message .message {
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Error Styling */
+
+.error label {
+  color: #fd7014;
+}
+
+.error input[type="text"] {
+  background-color: #393e46;
+  border: 1px solid #fd7014;
+  outline: none;
+}
+
+.error .error-message {
+  display: inline-block;
+}
+
+.message {
+  color: #fd7014;
+}
+
+input[type="file"] {
+  background: #393e46;
+  border: 1px solid #999;
+  float: left;
+  font-size: 13px;
+  height: 33px;
+  margin: 0;
+  padding: 0 0 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*   box-shadow: 10px 10px 10px grey; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
