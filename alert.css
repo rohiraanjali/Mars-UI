@@ -94,16 +94,6 @@ ul.topnav li.left {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-h1 {
-  display: block;
-  color: #4caf50;
-  margin-left: 400px;
-  position: relative;
-  bottom: 30px;
-  font-size: 40px;
-  font-weight: 900;
-  font-family: var(--font-fam);
-}
 .main-title {
   display: block;
   color: white;
@@ -114,54 +104,16 @@ h1 {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle {
+.body-subtitle,
+.alert-text {
   display: block;
-  color: #6b7280;
+  color: white;
   font-family: var(--font-fam);
   margin-left: 400px;
 
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
   white-space: pre-line;
-}
-.img-main {
-  width: 32%;
-  margin-left: 1000px;
-  position: relative;
-  bottom: 250px;
-}
-.button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  margin-left: 400px;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-}
-
-.button-sec {
-  background-color: #333;
-  border: none;
-  color: white;
-  width: 9%;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-  border: 1px solid #4caf50;
 }
 
 .octicon {
@@ -169,20 +121,101 @@ h1 {
   vertical-align: text-top;
   fill: white;
 }
-.btn-img {
-  fill: white;
-  display: inline-block;
-  position: relative;
-  bottom: 274px;
-  right: 130px;
-  /* margin-bottom: 280px; */
+.usage-component,
+.size-component,
+.badge-avatar-component {
+  display: block;
+  color: white;
+  font-family: var(--font-fam);
+  margin-left: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  white-space: pre-line;
 }
 
-.img-carbon {
-  width: 60%;
-  margin-left: 530px;
+.alert {
+  height: 290px;
+  width: 35%;
+  border-radius: 10px;
+  color: white;
+  border: 3px solid #4caf50;
+  border-radius: 10px;
+  font-family: var(--font-fam);
+  margin-left: 400px;
+}
+.error-icon {
+  height: 22px;
+  margin-top: 1.5px;
+}
+.uploaded-icon {
+  height: 22px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.expire-icon {
+  height: 22px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.info-icon {
+  height: 22px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.error-alert {
+  width: 90%;
+  padding: 10px;
   position: relative;
-  bottom: 250px;
-  overflow: hidden;
-  overflow: none;
+  top: 20px;
+  left: 10px;
+  background-color: #393e46;
+}
+.closebtn-error,
+.closebtn-uploaded,
+.closebtn-expire,
+.closebtn-info {
+  margin-left: 15px;
+  font-weight: bold;
+  float: right;
+  font-size: 25px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 3.5px;
+}
+.uploaded-alert {
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 35px;
+  background-color: #4caf50;
+}
+.uploaded-text,
+.expire-text,
+.error-text,
+.info-text {
+  position: relative;
+  bottom: 5px;
+  left: 8px;
+}
+.expire-alert {
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: #393e46;
+}
+.info-alert {
+  width: 90%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: #4caf50;
+}
+.img-alert {
+  width: 60%;
+  margin-left: 450px;
+  position: relative;
+  top: 20px;
+  right: 40px;
 }

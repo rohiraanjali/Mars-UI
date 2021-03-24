@@ -94,16 +94,6 @@ ul.topnav li.left {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-h1 {
-  display: block;
-  color: #4caf50;
-  margin-left: 400px;
-  position: relative;
-  bottom: 30px;
-  font-size: 40px;
-  font-weight: 900;
-  font-family: var(--font-fam);
-}
 .main-title {
   display: block;
   color: white;
@@ -114,54 +104,15 @@ h1 {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle {
+.body-subtitle,
+.button-text {
   display: block;
-  color: #6b7280;
+  color: white;
   font-family: var(--font-fam);
   margin-left: 400px;
-
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
   white-space: pre-line;
-}
-.img-main {
-  width: 32%;
-  margin-left: 1000px;
-  position: relative;
-  bottom: 250px;
-}
-.button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  margin-left: 400px;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-}
-
-.button-sec {
-  background-color: #333;
-  border: none;
-  color: white;
-  width: 9%;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-  border: 1px solid #4caf50;
 }
 
 .octicon {
@@ -169,20 +120,86 @@ h1 {
   vertical-align: text-top;
   fill: white;
 }
-.btn-img {
-  fill: white;
-  display: inline-block;
-  position: relative;
-  bottom: 274px;
-  right: 130px;
-  /* margin-bottom: 280px; */
+
+.usage-component {
+  display: block;
+  color: white;
+  font-family: var(--font-fam);
+  margin-left: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  white-space: pre-line;
 }
 
-.img-carbon {
-  width: 60%;
-  margin-left: 530px;
+.buttons-div {
+  border: 3px solid #4caf50;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn-primary,
+.btn-primary-notification {
+  background-color: black;
+  color: white;
+  padding: 14px;
+  width: 10%;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-secondary {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 14px;
+  width: 10%;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 550;
+}
+.btn-link {
+  padding: 20px;
+}
+.btn-icon1 {
+  background-color: black;
+  color: white;
+  padding: 4px;
+  height: 54px;
+  width: 10%;
+  border-radius: 8px;
+}
+.settings-icon {
+  /* margin-top: 10px; */
+  margin-right: 10px;
+}
+span {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.buttonload {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+.btn-notification {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 0.2px solid white;
   position: relative;
-  bottom: 250px;
-  overflow: hidden;
-  overflow: none;
+  bottom: 4px;
+  right: 76px;
 }

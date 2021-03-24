@@ -94,16 +94,6 @@ ul.topnav li.left {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-h1 {
-  display: block;
-  color: #4caf50;
-  margin-left: 400px;
-  position: relative;
-  bottom: 30px;
-  font-size: 40px;
-  font-weight: 900;
-  font-family: var(--font-fam);
-}
 .main-title {
   display: block;
   color: white;
@@ -114,54 +104,17 @@ h1 {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle {
+.body-subtitle,
+.size-text,
+.badge-text {
   display: block;
-  color: #6b7280;
+  color: white;
   font-family: var(--font-fam);
   margin-left: 400px;
 
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
   white-space: pre-line;
-}
-.img-main {
-  width: 32%;
-  margin-left: 1000px;
-  position: relative;
-  bottom: 250px;
-}
-.button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  margin-left: 400px;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-}
-
-.button-sec {
-  background-color: #333;
-  border: none;
-  color: white;
-  width: 9%;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  bottom: 280px;
-  border-radius: 6px;
-  border: 1px solid #4caf50;
 }
 
 .octicon {
@@ -169,20 +122,104 @@ h1 {
   vertical-align: text-top;
   fill: white;
 }
-.btn-img {
-  fill: white;
-  display: inline-block;
-  position: relative;
-  bottom: 274px;
-  right: 130px;
-  /* margin-bottom: 280px; */
+.usage-component,
+.size-component,
+.badge-avatar-component {
+  display: block;
+  color: white;
+  font-family: var(--font-fam);
+  margin-left: 400px;
+  font-size: 30px;
+  font-weight: 500;
+  white-space: pre-line;
+}
+.avatar-size,
+.avatar-size1 {
+  border: 3px solid #4caf50;
+  width: 51%;
+  border-radius: 10px;
+  margin-left: 400px;
 }
 
-.img-carbon {
+.avatar-rounded1 {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.img-avatar {
   width: 60%;
-  margin-left: 530px;
+  margin-left: 400px;
   position: relative;
-  bottom: 250px;
-  overflow: hidden;
-  overflow: none;
+  top: 20px;
+  right: 40px;
+}
+
+.avatar-rounded {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.avatar-rounded0 {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.avatar-rounded1 {
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.avatar-rounded2 {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.avatar-rounded3 {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.avatar-rounded4 {
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.offline-notification {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 0.2px solid white;
+  position: relative;
+  top: 35px;
+  right: 44px;
+  border: 3px solid white;
+}
+.online-notification {
+  background-color: #4caf50;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 0.2px solid white;
+  position: relative;
+  top: 35px;
+  right: 44px;
+  border: 3px solid white;
 }
