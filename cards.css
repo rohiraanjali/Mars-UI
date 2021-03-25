@@ -25,6 +25,7 @@ ul.topnav li a {
   text-align: center;
   padding: 22px 26px;
   text-decoration: none;
+  font-family: var(--font-fam);
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -77,6 +78,7 @@ ul.topnav li.left {
   width: 250px;
   position: fixed;
   z-index: 1;
+  font-family: var(--font-fam);
   top: 80px;
   left: 0;
   background-color: #333;
@@ -84,7 +86,6 @@ ul.topnav li.left {
   padding-top: 20px;
   overflow: scroll;
   margin-left: 80px;
-  font-family: var(--font-fam);
 }
 
 .sidenav a {
@@ -134,59 +135,10 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 
-.img-typography {
+.img-toast {
   width: 60%;
-  margin-left: 480px;
+  margin-left: 400px;
   position: relative;
   top: 20px;
-  right: 80px;
-}
-.typography-div {
-  border: 3px solid #4caf50;
-  padding: 20px;
-  width: 30%;
-  height: 370px;
-  margin-left: 400px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  font-family: var(--font-fam);
-  justify-content: space-around;
-}
-
-.heading-typography,
-.text-typography,
-.-color-text {
-  float: left;
-  color: white;
-  text-align: left;
-  letter-spacing: 0.02rem;
-}
-
-.subtitle1 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.subtitle2 {
-  font-size: 18px;
-  font-weight: 500;
-}
-.para-subtitle2 {
-  font-size: 14px;
-  font-weight: regular;
-}
-
-.grey-color {
-  color: grey;
-  font-size: 30px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.center {
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  font-weight: 500;
+  right: 100px;
 }

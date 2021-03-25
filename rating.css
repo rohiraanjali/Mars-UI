@@ -37,7 +37,9 @@ ul.topnav li a.active {
 
 ul.topnav li.right {
   float: right;
-  font-family: "DM Sans", "sans-serif";
+  font-family: var(--font-fam);
+  font-size: 22px;
+  font-weight: 400;
 }
 
 ul.topnav li.left {
@@ -82,6 +84,7 @@ ul.topnav li.left {
   padding-top: 20px;
   overflow: scroll;
   margin-left: 80px;
+  font-family: var(--font-fam);
 }
 
 .sidenav a {
