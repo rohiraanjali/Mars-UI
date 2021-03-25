@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <nav>
+        <div class="nav1-list">
+      
+            <ul class="topnav">
+      <li class="left"><a href="#title">Mars UI</a></li>
+      <li class="right"><a href="#contact">Contact</a></li>
+      <li class="right"><a href="https://github.com/rohiraanjali/Mars-Ui"
+         target="_blank" rel="noreferrer">
+         <svg class="octicon octicon-mark-github v-align-middle" height="30" viewBox="0 0 16 16" version="1.1" width="30" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+       
+        </a>
+        </li>
+      <li class="right"><a href="#home">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidenav">
+
+        <a href="avatar.html">Avatar</a><br />
+        <a href="badge.html">Badges</a><br />
+        <a href="alert.html">Alert</a><br />
+        <a href="button.html">Buttons</a><br />
+        <a href="image.html">Images</a><br />
+        <a href="input.html">Inputs</a><br />
+        <a href="navigation.html">Navigation</a><br />
+        <a href="modal.html">Modal</a><br />
+        <a href="rating.html">Ratings</a><br />
+        <a href="Grids.html">Grids</a><br />
+        <a href="cards.html">Cards</a><br />
+        <a href="toast.html">Toasts</a><br />
+        <a href="text.html">Text Utilities</a><br />
+        <a href="text.html">Lists</a><br />
+      </div>
+      <main>
+        <h2 class="main-title">Modal</h2>
+        <p class="body-subtitle">Modal component is used for creating dialogs, popovers, lightboxes, etc.</p>
+        <div class="modal-component">
+            <div class="modal">
+                <h2>Email needs verification</h2>
+                <p>Your email address must be verified before you can create your first project . Check your inbox for the verification link or visit <span>your account settings</span> to resend the email.</p>
+                <button class=click>
+                  View Account Settings 
+                </button>
+                <button class="click-close" onclick="this.parentElement.style.display='none';">
+                  Close 
+                </button>      
+              </div>
+            </div>
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%2851%2C51%2C51%2C1%29&t=blackboard&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal-component%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EEmail%2520needs%2520verification%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EYour%2520email%2520address%2520must%2520be%2520verified%2520before%2520you%2520can%2520create%2520your%2520first%2520project%2520.%2520Check%2520your%2520inbox%2520for%2520the%2520verification%2520link%2520or%2520visit%2520%253Cspan%253Eyour%2520account%2520settings%253C%252Fspan%253E%2520to%2520resend%2520the%2520email.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253Dclick%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520View%2520Account%2520Settings%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522click-close%2522%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Close%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+  style="width: 926px; height: 498px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin" class="img-modal">
+</iframe>
+      </main>
+      
+</body>
+</html>

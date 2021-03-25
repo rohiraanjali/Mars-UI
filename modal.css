@@ -37,9 +37,7 @@ ul.topnav li a.active {
 
 ul.topnav li.right {
   float: right;
-  font-family: var(--font-fam);
-  font-size: 22px;
-  font-weight: 400;
+  font-family: "DM Sans", "sans-serif";
 }
 
 ul.topnav li.left {
@@ -106,8 +104,7 @@ ul.topnav li.left {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle,
-.button-text {
+.body-subtitle {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -123,8 +120,7 @@ ul.topnav li.left {
   fill: white;
 }
 
-.usage-component,
-.floating-btn-components {
+.usage-component {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -134,136 +130,50 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 
-.buttons-div1,
-.buttons-div2,
-.buttons-div3 {
+.modal-component {
   border: 3px solid #4caf50;
   padding: 20px;
-  width: 50%;
+  width: 70%;
+  height: 300px;
   margin-left: 400px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.btn-primary,
-.btn-primary-notification {
-  background-color: #393e46;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-secondary {
   background-color: #333;
-  border: 2px solid #4caf50;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-link {
-  padding: 10px;
-  color: lightblue;
-  font-size: 20px;
-}
-.btn-icon1 {
-  background-color: black;
-  color: white;
-  padding: 4px;
-  height: 55px;
-  width: 20%;
-  border-radius: 8px;
-  background-color: #393e46;
-}
-.settings-icon {
-  /* margin-top: 10px; */
-  margin-right: 10px;
-}
-span {
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: 550;
 }
 
-.buttonload {
-  background-color: #393e46;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-}
-.fa {
-  margin-left: -12px;
-  margin-right: 8px;
-}
-.btn-notification {
-  background-color: red;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  border: 0.2px solid white;
-  position: relative;
-  bottom: 4px;
-  right: 45px;
-}
-.img-button {
+.img-modal {
   width: 60%;
   margin-left: 400px;
   position: relative;
   top: 20px;
-  right: 40px;
-  overflow: hidden;
-  overflow: none;
-}
-.Icon-btn-round {
-  background-color: #393e46;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-}
-.home-icon {
-  color: white;
-  height: 2em;
-  margin-top: 5px;
+  right: 80px;
 }
 
-.plus-icon {
+.modal {
+  border: 6px solid #4caf50;
+  width: 40%;
+  margin-bottom: 250px;
+  margin-left: 300px;
+  padding: 1rem;
+  background-color: black;
   color: white;
-  height: 2em;
-  font-weight: 550px;
-  font-size: 40px;
-  margin-top: 5px;
+  border-radius: 5px;
+  word-spacing: 5px;
 }
-
-.edit-icon {
+.click {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #606060;
   color: white;
-  margin-top: 5px;
-  height: 2.5em;
+  border: 1px solid #606060;
 }
-.heart-icon {
-  color: white;
-  margin-top: 5px;
-  height: 1.8em;
+span {
+  color: #73c2fb;
 }
-
-.prev-btn,
-.next-btn {
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-  margin-top: 10px;
-  border-radius: 100%;
-  background-color: #393e46;
+.click-close {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid white;
   color: white;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: #333;
+  width: 90px;
 }

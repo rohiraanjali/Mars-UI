@@ -25,6 +25,7 @@ ul.topnav li a {
   text-align: center;
   padding: 22px 26px;
   text-decoration: none;
+  font-family: var(--font-fam);
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -77,6 +78,7 @@ ul.topnav li.left {
   width: 250px;
   position: fixed;
   z-index: 1;
+  font-family: var(--font-fam);
   top: 80px;
   left: 0;
   background-color: #333;
@@ -107,7 +109,7 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 .body-subtitle,
-.button-text {
+.typography-text {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -123,8 +125,7 @@ ul.topnav li.left {
   fill: white;
 }
 
-.usage-component,
-.floating-btn-components {
+.usage-component {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -134,136 +135,127 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 
-.buttons-div1,
-.buttons-div2,
-.buttons-div3 {
-  border: 3px solid #4caf50;
-  padding: 20px;
-  width: 50%;
-  margin-left: 400px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.btn-primary,
-.btn-primary-notification {
-  background-color: #393e46;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-secondary {
-  background-color: #333;
-  border: 2px solid #4caf50;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-link {
-  padding: 10px;
-  color: lightblue;
-  font-size: 20px;
-}
-.btn-icon1 {
-  background-color: black;
-  color: white;
-  padding: 4px;
-  height: 55px;
-  width: 20%;
-  border-radius: 8px;
-  background-color: #393e46;
-}
-.settings-icon {
-  /* margin-top: 10px; */
-  margin-right: 10px;
-}
-span {
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: 550;
-}
-
-.buttonload {
-  background-color: #393e46;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-}
-.fa {
-  margin-left: -12px;
-  margin-right: 8px;
-}
-.btn-notification {
-  background-color: red;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  border: 0.2px solid white;
-  position: relative;
-  bottom: 4px;
-  right: 45px;
-}
-.img-button {
+.img-toast {
   width: 60%;
   margin-left: 400px;
   position: relative;
   top: 20px;
-  right: 40px;
-  overflow: hidden;
-  overflow: none;
+  right: 100px;
 }
-.Icon-btn-round {
-  background-color: #393e46;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
+.toast-div {
+  border: 3px solid #4caf50;
+  padding: 20px;
+  width: 30%;
+  height: 50px;
+  margin-left: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-fam);
+  justify-content: space-around;
 }
-.home-icon {
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 50px;
+}
+.succ-btn {
+  background: lightgreen;
   color: white;
-  height: 2em;
-  margin-top: 5px;
+  font-weight: 700;
+  border: 1 px solid white;
 }
-
-.plus-icon {
+.error-btn {
+  background: red;
   color: white;
-  height: 2em;
-  font-weight: 550px;
-  font-size: 40px;
-  margin-top: 5px;
+  font-weight: 700;
+  border: 1 px solid white;
 }
-
-.edit-icon {
-  color: white;
-  margin-top: 5px;
-  height: 2.5em;
+.warning-btn {
+  background: yellow;
+  color: black;
+  font-weight: 700;
+  border: 1 px solid white;
 }
-.heart-icon {
-  color: white;
-  margin-top: 5px;
-  height: 1.8em;
-}
-
-.prev-btn,
-.next-btn {
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-  margin-top: 10px;
-  border-radius: 100%;
-  background-color: #393e46;
-  color: white;
-  font-size: 30px;
+#toast,
+#toast2,
+#toast3 {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: lightgreen;
+  color: black;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+#toast.show,
+#toast2.show,
+#toast3.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+#toast {
+  background-color: lightgreen;
+  color: white;
+}
+#toast2 {
+  background-color: red;
+  color: white;
+}
+#toast3 {
+  background-color: yellow;
+  color: black;
 }

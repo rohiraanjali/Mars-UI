@@ -37,9 +37,7 @@ ul.topnav li a.active {
 
 ul.topnav li.right {
   float: right;
-  font-family: var(--font-fam);
-  font-size: 22px;
-  font-weight: 400;
+  font-family: "DM Sans", "sans-serif";
 }
 
 ul.topnav li.left {
@@ -106,12 +104,11 @@ ul.topnav li.left {
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle,
-.button-text {
+.body-subtitle {
   display: block;
   color: white;
   font-family: var(--font-fam);
-  margin-left: 400px;
+  margin-left: 35px;
   font-size: 20px;
   font-weight: lighter;
   white-space: pre-line;
@@ -123,8 +120,7 @@ ul.topnav li.left {
   fill: white;
 }
 
-.usage-component,
-.floating-btn-components {
+.usage-component {
   display: block;
   color: white;
   font-family: var(--font-fam);
@@ -134,136 +130,85 @@ ul.topnav li.left {
   white-space: pre-line;
 }
 
-.buttons-div1,
-.buttons-div2,
-.buttons-div3 {
+.rating-component {
   border: 3px solid #4caf50;
   padding: 20px;
-  width: 50%;
+  width: 20%;
+  height: 55px;
   margin-left: 400px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.btn-primary,
-.btn-primary-notification {
-  background-color: #393e46;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-secondary {
   background-color: #333;
-  border: 2px solid #4caf50;
-  color: white;
-  padding: 14px;
-  width: 20%;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-link {
-  padding: 10px;
-  color: lightblue;
-  font-size: 20px;
-}
-.btn-icon1 {
-  background-color: black;
-  color: white;
-  padding: 4px;
-  height: 55px;
-  width: 20%;
-  border-radius: 8px;
-  background-color: #393e46;
-}
-.settings-icon {
-  /* margin-top: 10px; */
-  margin-right: 10px;
-}
-span {
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: 550;
 }
 
-.buttonload {
-  background-color: #393e46;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-}
-.fa {
-  margin-left: -12px;
-  margin-right: 8px;
-}
-.btn-notification {
-  background-color: red;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  border: 0.2px solid white;
-  position: relative;
-  bottom: 4px;
-  right: 45px;
-}
-.img-button {
+.img-rating {
   width: 60%;
   margin-left: 400px;
   position: relative;
   top: 20px;
-  right: 40px;
+  right: 80px;
   overflow: hidden;
   overflow: none;
 }
-.Icon-btn-round {
-  background-color: #393e46;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-}
-.home-icon {
-  color: white;
-  height: 2em;
-  margin-top: 5px;
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-.plus-icon {
-  color: white;
-  height: 2em;
-  font-weight: 550px;
-  font-size: 40px;
-  margin-top: 5px;
+.rating > input {
+  display: none;
 }
 
-.edit-icon {
-  color: white;
-  margin-top: 5px;
-  height: 2.5em;
-}
-.heart-icon {
-  color: white;
-  margin-top: 5px;
-  height: 1.8em;
+.rating > label {
+  position: relative;
+  width: 1em;
+  font-size: 3vw;
+  color: #ffd600;
+  cursor: pointer;
 }
 
-.prev-btn,
-.next-btn {
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-  margin-top: 10px;
-  border-radius: 100%;
-  background-color: #393e46;
-  color: white;
-  font-size: 30px;
+.rating > label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
+
+h1,
+p {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
+
+h1 {
+  margin-top: 150px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/* 
+ */
