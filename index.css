@@ -122,17 +122,17 @@ h1 {
   color: #6b7280;
   font-family: var(--font-fam);
   margin-left: 400px;
-
   font-size: 24px;
   font-weight: lighter;
   white-space: pre-line;
 }
 .img-main {
-  width: 32%;
+  width: 24%;
   margin-left: 1000px;
   position: relative;
   bottom: 250px;
 }
+
 .button {
   background-color: #4caf50;
   border: none;
@@ -146,7 +146,7 @@ h1 {
   cursor: pointer;
   margin-left: 400px;
   position: relative;
-  bottom: 280px;
+  bottom: 200px;
   border-radius: 6px;
 }
 
@@ -162,7 +162,7 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   position: relative;
-  bottom: 280px;
+  bottom: 200px;
   border-radius: 6px;
   border: 1px solid #4caf50;
 }
@@ -185,7 +185,7 @@ h1 {
   width: 60%;
   margin-left: 530px;
   position: relative;
-  bottom: 250px;
+  bottom: 180px;
   overflow: hidden;
   overflow: none;
 }

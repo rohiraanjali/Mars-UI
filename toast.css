@@ -41,6 +41,7 @@ ul.topnav li.right {
   font-family: var(--font-fam);
   font-size: 22px;
   font-weight: 400;
+  position: fixed;
 }
 
 ul.topnav li.left {
@@ -164,7 +165,7 @@ button {
 }
 .succ-btn {
   background: lightgreen;
-  color: white;
+  color: black;
   font-weight: 700;
   border: 1 px solid white;
 }
@@ -249,7 +250,7 @@ button {
 }
 #toast {
   background-color: lightgreen;
-  color: white;
+  color: black;
 }
 #toast2 {
   background-color: red;
