@@ -2,50 +2,54 @@
 
 :root {
   --font-fam: "Rubik", sans-serif;
+  --primary-color: white;
+  --secondary-color: #4caf50;
+  --tertiary-color: #333;
 }
 
 body {
-  background-color: #333;
+  background-color: var(--tertiary-color);
 }
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--tertiary-color);
   width: 100%;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 ul.topnav li a {
   display: block;
-  color: white;
+  color: var(--primary-color);
   text-align: center;
-  padding: 22px 26px;
+  padding: 1.8rem;
   text-decoration: none;
 }
 
 ul.topnav li a:hover:not(.active) {
-  background-color: #4caf50;
+  background-color: var(--secondary-color);
 }
-/* 
+
 ul.topnav li a.active {
-  background-color: #4caf50;
-} */
+  background-color: var(--secondary-color);
+}
 
 ul.topnav li.right {
   float: right;
   font-family: var(--font-fam);
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 ul.topnav li.left {
   float: left;
-  font-size: 28px;
-  margin-left: 55px;
+  font-size: 1.8rem;
+  margin-left: 3.5rem;
   font-weight: bolder;
   font-family: var(--font-fam);
 }
@@ -57,10 +61,10 @@ ul.topnav li.left {
 }
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 1.5rem;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .main-title,
   .body-subtitle {
@@ -69,29 +73,30 @@ ul.topnav li.left {
 
   /* } responsiveness */
 }
+
 .sidenav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 250px;
+  width: 20rem;
   position: fixed;
   z-index: 1;
-  top: 80px;
+  top: 5.7rem;
   left: 0;
-  background-color: #333;
+  background-color: var(--tertiary-color);
   overflow-x: hidden;
-  padding-top: 20px;
   overflow: scroll;
-  margin-left: 80px;
+  margin-left: 0.5em;
   font-family: var(--font-fam);
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 1rem 2rem 0.5rem 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #818181;
+  margin-left: 4rem;
   display: block;
 }
 .sidenav a:hover {
@@ -99,93 +104,190 @@ ul.topnav li.left {
 }
 h1 {
   display: block;
-  color: #4caf50;
+  color: var(--secondary-color);
   margin-left: 400px;
   position: relative;
-  bottom: 30px;
-  font-size: 40px;
+  bottom: 1.8rem;
+  font-size: 2.6rem;
   font-weight: 900;
   font-family: var(--font-fam);
 }
 .main-title {
   display: block;
-  color: white;
+  color: var(--primary-color);
   font-family: var(--font-fam);
   margin-left: 400px;
-  margin-top: 100px;
-  font-size: 40px;
+  margin-top: 6rem;
+  font-size: 2.5rem;
   font-weight: 900;
   white-space: pre-line;
 }
-.body-subtitle {
+.body-subtitle,
+.size-text,
+.badge-text {
   display: block;
   color: #6b7280;
   font-family: var(--font-fam);
   margin-left: 400px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: lighter;
   white-space: pre-line;
 }
 .img-main {
-  width: 24%;
-  margin-left: 1000px;
+  width: 26%;
+  margin-left: 62rem;
   position: relative;
-  bottom: 250px;
+  bottom: 16rem;
 }
 
 .button {
-  background-color: #4caf50;
+  background-color: var(--secondary-color);
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: var(--primary-color);
+  padding: 1rem 1.8rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1rem;
   cursor: pointer;
   margin-left: 400px;
   position: relative;
-  bottom: 200px;
-  border-radius: 6px;
+  bottom: 12.5rem;
+  border-radius: 0.4em;
 }
 
 .button-sec {
   background-color: #333;
   border: none;
-  color: white;
+  color: var(--primary-color);
   width: 9%;
-  padding: 15px 32px;
+  padding: 1rem 1.4rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   position: relative;
-  bottom: 200px;
-  border-radius: 6px;
-  border: 1px solid #4caf50;
+  bottom: 12.5rem;
+  border-radius: 0.4em;
+  border: 1px solid var(--secondary-color);
 }
 
 .octicon {
   display: inline-block;
   vertical-align: text-top;
-  fill: white;
-}
-.btn-img {
-  fill: white;
-  display: inline-block;
-  position: relative;
-  bottom: 274px;
-  right: 130px;
-  /* margin-bottom: 280px; */
+  fill: var(--primary-color);
 }
 
 .img-carbon {
   width: 35%;
-  margin-left: 530px;
+  margin-left: 32rem;
   position: relative;
-  bottom: 180px;
+  bottom: 10rem;
   overflow: hidden;
   overflow: none;
+}
+
+/* 1) Avatar  */
+
+.usage-component,
+.size-component,
+.badge-avatar-component {
+  display: block;
+  color: var(--primary-color);
+  font-family: var(--font-fam);
+  margin-left: 400px;
+  font-size: 2rem;
+  font-weight: 500;
+  white-space: pre-line;
+}
+.avatar-size,
+.avatar-size1 {
+  border: 0.2rem solid #4caf50;
+  width: 50%;
+  border-radius: 0.8rem;
+  margin-left: 400px;
+}
+
+.avatar-rounded1 {
+  vertical-align: middle;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+
+.img-avatar {
+  width: 60%;
+  margin-left: 400px;
+  position: relative;
+  top: 2.2rem;
+  right: 2.2rem;
+}
+
+.avatar-rounded {
+  vertical-align: middle;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.avatar-rounded0 {
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.avatar-rounded1 {
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.avatar-rounded2 {
+  vertical-align: middle;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.avatar-rounded3 {
+  vertical-align: middle;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.avatar-rounded4 {
+  vertical-align: middle;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.offline-notification {
+  background-color: red;
+  color: var(--primary-color);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  border: 0.2px solid var(--primary-color);
+  position: relative;
+  top: 1.8rem;
+  right: 2.5rem;
+  border: 3px solid var(--primary-color);
+}
+.online-notification {
+  background-color: #4caf50;
+  color: var(--primary-color);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+  border: 0.2px solid var(--primary-color);
+  position: relative;
+  top: 35px;
+  right: 44px;
+  border: 3px solid var(--primary-color);
 }
