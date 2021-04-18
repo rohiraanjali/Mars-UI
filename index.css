@@ -165,7 +165,7 @@ h1 {
   background-color: var(--tertiary-color);
   border: none;
   color: var(--primary-color);
-  width: 9%;
+  width: 12%;
   padding: 1rem 1.4rem;
   text-align: center;
   text-decoration: none;
@@ -191,4 +191,8 @@ h1 {
   bottom: 10rem;
   overflow: hidden;
   overflow: none;
+}
+
+.download-link {
+  color: white;
 }
